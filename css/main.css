@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+main {
+    display: block;
+}
+/*MENU CODE */
+.container-page {
+    flex: 1 0 auto;
+}
+
+/*HEADER CODE*/
+header{
+    display: block;
+}
+
+/*FIRST SECTION BANNER CODE*/
+.bg-dark {
+   opacity: 1;
+    background-color: #0b0f19 !important;
+}

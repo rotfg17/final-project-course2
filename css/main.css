@@ -27,11 +27,23 @@ header{
 }
 
 .logo {
+    display: inline-block;
     font-size: 30px;
     font-weight: 700;
     color: white;
-    border-bottom: 3px solid #6366f1;
 }
+
+.logo img {
+    max-height: 50px; 
+    vertical-align: middle; 
+}
+
+.logo-text {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px; 
+    vertical-align: middle;
+}
+
 
 .nav-list {
     display: flex;
@@ -125,11 +137,15 @@ section {
   .btn-transparent:hover {
     background-color: #8b5cf6;
   }
-
+  .hero-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
 .hero-img img{
     position: absolute;
     top: 25vh;
     right: 5vh;
-    /* max-width: 875px; */
+    max-width: 875px;
 }
 /*================END BANNER INFORMATION OR FIRST SECTION================*/

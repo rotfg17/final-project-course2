@@ -7,9 +7,10 @@
 }
 
 body {
-    background: url(../assets/img/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 /*================START HEADER OR NAVEGATION================*/
@@ -23,7 +24,9 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 33px 9%;
-    background-color: transparent;
+    background: url(../assets/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    
 }
 
 .logo {
@@ -114,6 +117,7 @@ header{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
+    
 }
 
 section {
@@ -168,6 +172,7 @@ section {
     font-size: 1rem;
     border-radius: 0.5rem;
     transition: all 0.5s ease;
+    cursor: pointer;
   }
 
   .btn:hover {

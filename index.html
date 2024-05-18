@@ -6,6 +6,7 @@
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Final Project Course 2</title>
 </head>
 <body>
@@ -17,21 +18,19 @@
             <!-- <span class="logo-text">CJ Consulting</span> -->
         </a>
         <ul class="nav-list">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            
-            <li>
-                <a href="pages/services.html">Services</a>
-            </li>
-            <li>
-                <a href="pages/about.html">About</a>
-            </li>
-            <li>
-                <a href="pages/contacts.html">Contact</a>
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown-container">
+                <a  class="drop">Services <i class='bx bx-chevron-down' ></i></a>
+                <div class="dropdown-menu">
+                    <a href="#">Web Development</a>
+                    <a href="#">Web Design</a>
+                    <a href="#">Digital Marketing</a>
+                    <a href="#">Services Integration</a>
+                    <a href="#">IT Consulting</a>
+                </div></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contacts.html">Contact</a></li>
         </ul>
-
         <i class='bx bx-menu' id="menu-icon"></i>
     </header>
 
@@ -52,9 +51,10 @@
                 <div class="hero-img">
                     <img src="assets/img/hero-img.png" alt="hero-img">
                 </div>
-        
         </section>
     </main>  
     
+
+    <script src="js/main.js"></script>
 </body>
 </html>

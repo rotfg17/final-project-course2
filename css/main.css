@@ -34,13 +34,13 @@ header{
 }
 
 .logo img {
-    max-height: 50px; 
-    vertical-align: middle; 
+    max-height: 50px;
+    vertical-align: middle;
 }
 
 .logo-text {
     font-family: 'Permanent Marker', cursive;
-    font-size: 30px; 
+    font-size: 30px;
     vertical-align: middle;
 }
 
@@ -50,18 +50,48 @@ header{
 }
 
 .nav-list a{
-    font-size: 18px;
-    font-weight: 600;
     color: white;
     margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
 
 .nav-list a:hover {
-    border-bottom: 2px solid #d946ef;
-    padding: 5px;
+    color: #d946ef;
 }
+
+.drop {
+    cursor: pointer;
+}
+
+.bx-chevron-down {
+    position: relative;
+    top: 4px;
+    
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 80px;
+    right: 19%; 
+    background: url(../assets/img/hero-bg.jpg);
+    
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px ;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
 
 #menu-icon {
     color: white;
@@ -92,9 +122,9 @@ section {
 
 .hero-text h5 {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .hero-text h3, h2, h1 {
@@ -118,17 +148,32 @@ section {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
+  /* .hero-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+} */
+.hero-img img{
+    width: 700px;
+    height: auto;
+}
+
 .btn {
     display: inline-block;
     background-color: #8b5cf6;
     border: 1px solid #8b5cf6;
     color:white;
     padding: 0.9rem 2rem;
+    /* line-height: 1.4; */
     font-size: 1rem;
     border-radius: 0.5rem;
     transition: all 0.5s ease;
   }
-  
+
+  .btn:hover {
+    transform: translateX(8px);
+  }
+
   .btn-transparent {
     background-color: transparent;
     color: white;
@@ -137,15 +182,89 @@ section {
   .btn-transparent:hover {
     background-color: #8b5cf6;
   }
-  .hero-img{
+
+
+/*================END BANNER INFORMATION OR FIRST SECTION================*/
+
+
+/*================START FORM SECTION FOR CONTACT================*/
+.hero-container {
+    width: 100%;
+    padding-right: 70px;
+    position: relative;
+    top: 20px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .625rem 3rem .625rem 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-right: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.881);
+    background-color: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.18);
+
+}
+
+select,
+textarea{
+    color: rgba(255, 255, 255, 0.881);
+    background-color: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.18);
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-right: 10px;
+    border: none;
+}
+
+.form-fields {
+    width: 550px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
-.hero-img img{
-    position: absolute;
-    top: 25vh;
-    right: 5vh;
-    max-width: 875px;
+
+.message {
+    grid-column: span 2;
 }
-/*================END BANNER INFORMATION OR FIRST SECTION================*/
+
+.text-center {
+    color: white;
+    text-align: center !important;
+    font-size: 0.875rem !important;
+}
+
+.form-label {
+    color: white;
+    margin-bottom: .3125rem;
+    font-weight: 700;
+}
+
+.fs-base {
+    font-size: 1rem !important;
+}
+
+label {
+    display: inline-block;
+}
+
+.text-primary {
+    color: #6366f1 !important;
+}
+
+
+
+
+
+/*================END FORM SECTION FOR CONTACT================*/

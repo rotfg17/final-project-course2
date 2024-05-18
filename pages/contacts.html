@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Final Project Course 2</title>
+</head>
+<body>
+
+    <!--==============================HEADER OR NAVEGATION===============================-->
+    <header>
+      <a href="#" class="logo">
+          <img src="../assets/img/logo-img.png" alt="Logo of the company">
+          <!-- <span class="logo-text">CJ Consulting</span> -->
+      </a>
+      <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown-container">
+              <a  class="drop">Services <i class='bx bx-chevron-down' ></i></a>
+              <div class="dropdown-menu">
+                  <a href="#">Web Development</a>
+                  <a href="#">Web Design</a>
+                  <a href="#">Digital Marketing</a>
+                  <a href="#">Services Integration</a>
+                  <a href="#">IT Consulting</a>
+              </div></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+      </ul>
+      <i class='bx bx-menu' id="menu-icon"></i>
+  </header>
+
+    <!--==============================MAIN===============================-->
+    <main>
+        <!--==============================BANNER INFORMATION OR FIRST SECTION===============================-->
+        <section class="hero">
+            <div class="hero-container">
+            <form id="form-container" action="/submit-path" method="post">
+                <div class="form-fields">
+                    <div class="card-form contact-form">
+                        <label for="firstname" class="form-label fs-base">First Name<span class="text-primary"> *</span></label>
+                        <input type="text" name="firstname" autocomplete="family-name" class="form-control form-control-lg" id="firstname" placeholder="Your First name" required="">
+                      </div>
+                    <div class="card-form contact-form">
+                        <label for="lastname" class="form-label fs-base">Last Name<span class="text-primary"> *</span></label>
+                        <input type="text" name="lastname" autocomplete="family-name" class="form-control form-control-lg" id="lastname" placeholder="Your last name" required="">
+                      </div>
+                    <div class="card-form contact-form">
+                        <label for="email" class="form-label fs-base">Email Address<span class="text-primary"> *</span></label>
+                        <input type="email" name="email" autocomplete="on" class="form-control form-control-lg" id="email" placeholder="Your business email" required="">
+                      </div>
+                    <div class="card-form contact-form">
+                        <label for="jobtitle" class="form-label fs-base">Webiste URL</label>
+                        <input type="text" name="jobtitle" class="form-control form-control-lg" id="jobtitle" placeholder="Your website's URL">
+                      </div>
+                    <div class="card-form contact-form">
+                        <label for="phone" class="form-label fs-base">Phone Number<span class="text-primary"> *</span></label>
+                        <input type="tel" name="phone" autocomplete="on" class="form-control form-control-lg" id="phone" placeholder="ex. +1 (234) 567-8910" required="">
+                      </div>
+                    <div class="card-form contact-form">
+                        <label for="service" class="form-label fs-base">Which service are you interested in?<span class="text-primary"> *</span></label>
+                        <select id="service" name="service" class="form-select form-select-lg" required="">
+                          <option value="" selected="" disabled="">- Please Select -</option>
+                          <option value="Digital Marketing">Digital Marketing</option>
+                          <option value="Web Development">Web Development</option>
+                          <option value="Web Design">Web Design</option>
+                          <option value="Sales Channel Management">Sales Channel Management</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    <div class="card-form contact-form message">
+                        <label for="message" class="form-label fs-base">What kind of help are you looking for?<span class="text-primary"> *</span></label>
+                        <textarea id="message" name="message" class="form-control form-control-lg" rows="3" placeholder="Let us know how we can help you achieve your goals" required=""></textarea>
+                      </div>
+                    <div class="card-form contact-form">
+                        <button type="submit" id="submit_button" class="btn btn-transparent">Get In Touch <i class="bx bx-right-arrow-alt text-light ms-1 lead"></i></button>
+                      </div>
+                    <p class="text-center">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+                </div>
+                </form>
+        </div>
+
+            
+            <!-- <div class="hero-text">
+                <h5>A Ecommerce Agency</h5>
+                <h3>We're Here To help</h3>
+                <h2>Your <span class="hero-text-gradient">Ecommeerce</span></h2>
+                <h1>Businnes Grow</h1>
+                <p class="hero-text-p"><span class="hero-text-gradient">CJ Company</span>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, dolor pariatur minus quas ratione natus voluptatum consectetur dolore iusto, rem tenetur?</p>
+                <a href="#" class="btn">Work With Us</a>
+                <a href="#" class="btn btn-transparent">Learn More</a>
+            </div> -->
+
+               
+        
+        </section>
+    </main>  
+    <script src="../js/main.js"></script>
+</body>
+</html>

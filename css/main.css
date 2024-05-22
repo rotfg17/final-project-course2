@@ -173,6 +173,7 @@ section {
     border-radius: 0.5rem;
     transition: all 0.5s ease;
     cursor: pointer;
+    font-weight: 700;
   }
 
   .btn:hover {
@@ -265,7 +266,7 @@ transform: translateY(0);
 /*================END SECOND SECTION================*/
 
 
-/*==============================OUT SERVICES OR THIRD SECTION===============================*/
+/*==============================START OUR SERVICES OR THIRD SECTION===============================*/
 
 .services {
     padding-top: 8rem;
@@ -285,7 +286,6 @@ transform: translateY(0);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem 1rem  ;
     padding-top: 3rem;
-    
 }
 
 .card-wrap {
@@ -327,8 +327,33 @@ transform: translateY(0);
     color: #8b5cf6;
 }
 
+/*==============================END OUR SERVICES OR THIRD SECTION===============================*/
+.founder {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
 
+.founder-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.founder-information {
+    position: relative;
+    top: 5rem;
+    left: 0;
+    text-align: justify;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    
+}
+
+.founder-img {
+    max-width: 80%;
+    height: auto;
+}
 
 
 

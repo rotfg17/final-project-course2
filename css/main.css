@@ -121,7 +121,7 @@ header{
 }
 
 section {
-    padding: 0 19%;
+    padding: 0 16%;
 }
 
 .hero-text h5 {
@@ -188,16 +188,91 @@ section {
     background-color: #8b5cf6;
   }
 
-
 /*================END BANNER INFORMATION OR FIRST SECTION================*/
+
+/*================START SECOND SECTION================*/
+
+.container {
+    margin-top: 5rem!important;
+    margin-bottom: 10rem;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 1rem;
+    
+}
+
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 90%;
+    height: 100%;
+    object-fit: cover; 
+    transition: all .3s ease;
+    background: rgba(255, 255, 255, .04);
+}
+
+ .img-container:nth-child(1){
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translateY(-1.25rem);
+}
+
+.img-container:nth-child(2){
+    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+    transform: translateY(-0.75rem);
+}
+
+.img-container:nth-child(3){
+    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+    transform: translateY(-0.25rem);
+}
+
+.img-container:nth-child(4){
+    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+    transform: translateY(0.25rem);
+}
+
+.img-wrapper:hover .img-container{
+transform: translateY(0);
+} 
+
+.section-content {
+    position: relative;
+    top: 20px;
+    right: 0;
+    padding: 1rem;
+}
+
+.section-description{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*================END SECOND SECTION================*/
+
 
 
 /*================START FORM SECTION FOR CONTACT================*/
 .hero-container {
     width: 100%;
-    padding-right: 70px;
+    padding-right: 90px;
     position: relative;
-    top: 20px;
+    right: -200px;
 }
 
 .form-control{
@@ -267,9 +342,4 @@ label {
 .text-primary {
     color: #6366f1 !important;
 }
-
-
-
-
-
 /*================END FORM SECTION FOR CONTACT================*/

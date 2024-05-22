@@ -262,8 +262,82 @@ transform: translateY(0);
     color: rgba(255, 255, 255, 0.7);
 }
 
-
 /*================END SECOND SECTION================*/
+
+
+/*==============================OUT SERVICES OR THIRD SECTION===============================*/
+
+.services {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    background: rgba(255, 255, 255, .05);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem 1rem  ;
+    padding-top: 3rem;
+    
+}
+
+.card-wrap {
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: start;
+}
+
+.card-wrap:hover{
+    background: rgba(255, 255, 255, .05);
+    border-color:rgba(255, 255, 255, .4);
+    transform: translateY(-0.25rem);
+    transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;
+}
+
+
+.card-title {
+    font-size: 1.7rem;
+    color: white;
+    padding: 15px;
+}
+
+.icons {
+  max-width: 40%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.links {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.links:hover {
+    color: #8b5cf6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

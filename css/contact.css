@@ -1,0 +1,78 @@
+
+
+/*================START FORM SECTION FOR CONTACT================*/
+.hero-container {
+    width: 100%;
+    padding-right: 90px;
+    position: relative;
+    right: -200px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .625rem 3rem .625rem 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-right: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.881);
+    background-color: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.18);
+
+}
+
+select,
+textarea{
+    color: rgba(255, 255, 255, 0.881);
+    background-color: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.18);
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-right: 10px;
+    border: none;
+}
+
+.form-fields {
+    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.message {
+    grid-column: span 2;
+}
+
+.text-center {
+    color: white;
+    text-align: center !important;
+    font-size: 0.875rem !important;
+}
+
+.form-label {
+    color: white;
+    margin-bottom: .3125rem;
+    font-weight: 700;
+}
+
+.fs-base {
+    font-size: 1rem !important;
+}
+
+label {
+    display: inline-block;
+}
+
+.text-primary {
+    color: #6366f1 !important;
+}
+/*================END FORM SECTION FOR CONTACT================*/

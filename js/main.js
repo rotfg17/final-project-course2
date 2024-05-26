@@ -55,3 +55,34 @@ dropdownMenu.addEventListener("click", function(event) {
 });
 
 
+// Body dark and Light
+document.addEventListener('DOMContentLoaded', function () {
+    const moonIcon = document.getElementById('theme-moon');
+    const sunIcon = document.getElementById('theme-sun');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        moonIcon.style.display = 'none';
+        sunIcon.style.display = 'block';
+    }
+
+    function toggleTheme() {
+        document.body.classList.toggle('dark-theme');
+
+        let theme = 'light';
+        if (document.body.classList.contains('dark-theme')) {
+            theme = 'dark';
+            moonIcon.style.display = 'none';
+            sunIcon.style.display = 'block';
+        } else {
+            moonIcon.style.display = 'block';
+            sunIcon.style.display = 'none';
+        }
+        localStorage.setItem('theme', theme);
+    }
+
+    moonIcon.addEventListener('click', toggleTheme);
+    sunIcon.addEventListener('click', toggleTheme);
+});
+

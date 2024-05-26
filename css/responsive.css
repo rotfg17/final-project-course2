@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1535px) {
     header {
         padding: 15px 3%;
@@ -79,8 +80,14 @@
 
 @media screen and (max-width: 960px) {
     /*================START BANNER INFORMATION OR FIRST SECTION================*/
-    #menu-icon {
+    #theme-moon {
+        display: none;
+    }
+    #theme-sun {
         display: block;
+    }
+    #menu-icon {
+        display: inline;
     }
     .nav-list {
         position: absolute;
@@ -116,7 +123,7 @@
     
     .dropdown-menu a {
         display: block;
-        color: white;
+        color: var(--header-color);
         text-decoration: none;
         font-size: 15px;
         margin: 0;

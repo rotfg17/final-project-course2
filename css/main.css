@@ -6,9 +6,40 @@
     -webkit-font-smoothing: antialiased;
 }
 
+:root {
+    --body-color: #000000;
+    --dark-body-color: #14092A;
+    --text-color: #D1C0F1;
+    --header-color:#D1C0F1;
+    --gradient-color: linear-gradient(to right, #6366f1, #8b5cf6, #d946ef);
+    --text-btn-color: #8b5cf6;
+    --drop-color: #FFFFFF;
+    --title-color:#D1C0F1;
+
+}
+
+/* Variables de tema oscuro */
+body.dark-theme {
+    --gradient-color: linear-gradient(to right, #f19e20, #ff8000, #f78851);
+    --first-color-light: #1E0849;
+    --first-color-dark: #14092A;
+    --title-color: #ff8000;
+    --text-color: #FFFFFF;
+    --text-color-light: #A094B8;
+    --white-color: #14092A;
+    --body-color: #14092A;
+    --container-color: #372A51;
+    --dark-title-color: #220953;
+    --dark-text-color: #220953;
+    --dark-body-color: #000000;
+    --dark-container-color: #FFFFFF;
+    --text-btn-color: #ff8000;
+    --header-color:#ff8000;
+}
+
 body {
-    background-color: black;
-    
+    background-color: var(--dark-body-color);
+    color: var(--text-color);
     /* background-repeat: no-repeat;
     background-size: cover; */
 }
@@ -24,7 +55,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 33px 9%;
-    background: url(../assets/img/hero-bg.jpg);
+    background: var(--dark-body-color);
     background-repeat: no-repeat;
     
 }
@@ -33,7 +64,7 @@ header{
     display: inline-block;
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: var(--text-color);
 }
 
 .logo img {
@@ -53,7 +84,7 @@ header{
 }
 
 .nav-list a{
-    color: white;
+    color: var(--header-color);
     margin-left: 60px;
     font-size: 18px;
     font-weight: 600;
@@ -62,7 +93,7 @@ header{
 }
 
 .nav-list a:hover {
-    color: #d946ef;
+    color: var(--drop-color);
 }
 
 .drop {
@@ -79,7 +110,7 @@ header{
     display: none; 
     position: absolute;
     top: 80px;
-    right: 19%; 
+    right: 42%; 
     background: url(../assets/img/hero-bg.jpg);
     
 }
@@ -87,17 +118,43 @@ header{
 .dropdown-menu a {
     display: block;
     padding: 8px ;
-    color: white;
+    color: var(--header-color);
     text-decoration: none;
 }
 
 .dropdown-menu.active {
     display: block;
 }
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-moon {
+    position: relative;
+    top: 2px;
+    left: 0.5rem;
+    color: var(--header-color);
+    font-size: 1.5rem;
+    z-index: 10001;
+    cursor: pointer;
+    padding-right: 1rem;
+}
 
+#theme-sun {
+    position: relative;
+    top: 2px;
+    left: 0.5rem;
+    color: var(--header-color);
+    font-size: 1.5rem;
+    z-index: 10001;
+    cursor: pointer;
+    padding-right: 1rem;
+    display: none;
+}
 
 #menu-icon {
-    color: white;
+    color: var(--header-color);
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
@@ -127,7 +184,7 @@ section {
 .hero-text h5 {
     font-size: 25px;
     font-weight: 400;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 40px;
 }
 
@@ -135,19 +192,19 @@ section {
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
     line-height: 1;
-    color: white;
+    color: var(--text-color);
     margin: 0 0 15px;
 }
 
 .hero-text-gradient {
-    background: linear-gradient(to right, #6366f1, #8b5cf6, #d946ef);
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0,0,0,0);
 }
 
 .hero-text-p {
     display: block;
-    color: white;
+    color: var(--text-color);
     font-size: 1.125rem;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
@@ -164,9 +221,9 @@ section {
 
 .btn {
     display: inline-block;
-    background-color: #8b5cf6;
-    border: 1px solid #8b5cf6;
-    color:white;
+    background: var(--gradient-color);
+    border: 1px solid var(--text-btn-color);
+    color:var(--text-color);
     padding: 0.9rem 2rem;
     /* line-height: 1.4; */
     font-size: 1rem;
@@ -182,11 +239,11 @@ section {
 
   .btn-transparent {
     background-color: transparent;
-    color: white;
+    color: var(--text-color);
   }
 
   .btn-transparent:hover {
-    background-color: #8b5cf6;
+    background-color: var(--text-btn-color);
   }
 
 /*================END BANNER INFORMATION OR FIRST SECTION================*/
@@ -279,6 +336,7 @@ transform: translateY(0);
     font-size: 2.5rem;
     font-weight: 700;
     padding-bottom: 20px;
+    color: var(--title-color);
 }
 
 .services-container {
@@ -291,7 +349,7 @@ transform: translateY(0);
 .card-wrap {
     padding: 2rem 1rem;
     background: rgba(255, 255, 255, .05);
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--text-color);
     border-radius: 10px;
     cursor: pointer;
     text-align: start;
@@ -307,8 +365,9 @@ transform: translateY(0);
 
 .card-title {
     font-size: 1.7rem;
-    color: white;
+    color: var(--text-color);
     padding: 15px;
+    color: var(--title-color);
 }
 
 .icons {
@@ -318,13 +377,13 @@ transform: translateY(0);
 }
 
 .links {
-    color: #FFFFFF;
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .links:hover {
-    color: #8b5cf6;
+    color: var(--text-btn-color);
 }
 
 /*==============================END OUR SERVICES OR THIRD SECTION===============================*/
@@ -373,9 +432,12 @@ text-align: center;
     column-gap: 5rem;
 }
 
-.step-number {
+.step-number{
     font-size: 2rem;
-    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #6366f1;
     
 }
 
@@ -384,10 +446,7 @@ text-align: center;
     font-weight: 800;
     font-family: sans-serif ;
     line-height: 1.3;
-    color: #FFFFFF;
+    color: var(--text-color);
     margin-bottom: 1rem;
 }
 
-.step-description {
-    text-align: start;
-}

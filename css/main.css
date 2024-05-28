@@ -341,10 +341,11 @@ transform: translateY(0);
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem 1rem  ;
     padding-top: 3rem;
 }
+
 
 .card-wrap {
     padding: 2rem 1rem;
@@ -384,7 +385,9 @@ transform: translateY(0);
 
 .links:hover {
     color: var(--text-btn-color);
-}
+} 
+
+  
 
 /*==============================END OUR SERVICES OR THIRD SECTION===============================*/
 

@@ -78,7 +78,7 @@
      /*================END SECOND SECTION================*/
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 576px) {
     /*================START BANNER INFORMATION OR FIRST SECTION================*/
     #theme-moon {
         display: none;
@@ -157,6 +157,24 @@
     }
 
      /*================END SECOND SECTION================*/
+
+    /*================START THIRD SECTION================*/
+
+     /*==============================FOUNDER OR FOUR SECTION===============================*/
+    .founder-section {
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .founder-img {
+        max-width: 100%;
+        height: auto;
+    }
+
 
 }
 

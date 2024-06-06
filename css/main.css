@@ -217,7 +217,7 @@ p > strong > span.hero-text-gradient {
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
-.hero-text-p::first-letter {
+.hero-text-p {
     display: block;
     color: var(--text-color);
     font-size: 1.125rem;

@@ -29,7 +29,7 @@ We have drawn inspiration from "Nebula 27" to offer exceptional quality services
 
 We are here to help you turn your vision into reality. Feel free to reach out to us!
 
-- **Email:** robinsonchalasj@gmail.com(robinsonchalasj@gmail.com)
+- **Email:** robinsonchalasj@gmail.com
 - **Phone:** (672) 667-6121
 - **Address:** 1396 E 23 Ave
 

@@ -210,7 +210,8 @@ section {
     margin: 0 0 15px;
 }
 
-.hero-text-gradient {
+h3 span.hero-text-gradient,
+p > strong > span.hero-text-gradient {
     background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);

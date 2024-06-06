@@ -8,9 +8,8 @@
     <!--=============== MAIN CSS ===============-->
     <link rel="stylesheet" href="css/main.css">
     <!--=============== RESPONSIVE CSS ===============-->
-    <link rel="stylesheet" href="css/responsive.css">
-
-    
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/tablet.css">
     <title>Final Project Course 2</title>
 
 </head>
@@ -19,7 +18,11 @@
     <!--==============================HEADER OR NAVEGATION===============================-->
     <header>
         <a href="#" class="logo">
-            <img src="assets/img/logo-img.png" alt="Logo of the company">
+            <picture>
+                <source media="(max-width: 376px)" srcset="assets/icons/web-link.png">
+                <img src="assets/img/cj-img.png" alt="Logo of the company">
+              </picture>
+            
             <!-- <span class="logo-text">CJ Consulting</span> -->
         </a>
         <ul class="nav-list" aria-label="First-nav">
@@ -37,11 +40,10 @@
             <li><a href="pages/contacts.html">Contact</a></li>
         </ul>
         <div class="icons">
-                <i class='bx bx-moon' id="theme-moon" ></i>
+                <i class='bx bx-moon ' id="theme-moon" ></i>
                 <i class='bx bx-sun' id="theme-sun"></i>
-                <img src="assets/img/ri_apps-2-line.png" id="menu-icon">
-            </div>
-        
+                <img src="assets/img/ri_apps-2-line.png" id="menu-icon" alt="icon">
+        </div>
         
     </header>
 
@@ -51,10 +53,10 @@
         <section class="hero">
             <div class="hero-text">
                 <h5>A Ecommerce Agency</h5>
-                <h3>We're Here To help</h3>
+                <h2>We're Here To help</h2>
                 <h3>Your <span class="hero-text-gradient ">Ecommeerce</span></h3>
                 <h1>Businnes Grow</h1>
-                <p class="hero-text-p"><span class="hero-text-gradient">CJ Company</span>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, dolor pariatur minus quas ratione natus voluptatum consectetur dolore iusto, rem tenetur?</p>
+                <p class="hero-text-p"><strong><span class="hero-text-gradient">CJ Company</span> </strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, dolor pariatur minus quas ratione natus voluptatum consectetur dolore iusto, rem tenetur?</p>
                 <a href="#container" class="btn btn-transparent">Learn More</a>
             </div>
 
@@ -121,13 +123,14 @@
                     <p class="section-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil provident similique repellendus blanditiis recusandae doloremque consectetur in dolorem alias est?</p>
                     <a href="#" class="links">Learn More</a>
                 </div>
+                </div>
         </section>  
 
         <!--==============================FOUNDER OR FOUR SECTION===============================-->
         <section class="founder">
          <div class="founder-section">
             <div class="card-founder">
-                <img src="assets/img/founder.JPG" alt="" class="founder-img" >
+                <img src="assets/img/founder.png" alt="" class="founder-img" >
             </div>
             <div class="founder-information">
             <h2 class="section-title">Experience Crafted In IT and Web Development</h2>
@@ -195,11 +198,11 @@
         <div class="footer-container">
             <div class="footer-card">
                 <div class="footer-title">
-                    <h2 class="title">CJ Consolting</h1>
+                    <h2 class="title">CJ Consolting</h2>
                     <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil fuga, illo, amet ut sed veniam quisquam aliquam corrupti exercitationem doloribus obcaecati dolorum odit animi cumque.</p>
                 </div>
                 <div class="footer-services">
-                    <h2 class="title">Services</h1>
+                    <h2 class="title">Services</h2>
                     <span><a href="#">Web Development</a></span><br>
                     <span><a href="#">Web Design</a></span><br>
                     <span><a href="#">Digital Marketing</a></span><br>
@@ -208,19 +211,19 @@
                 </div>
                 <br>
                 <div class="footer-info">
-                    <h2 class="title">Info</h1>
+                    <h2 class="title">Info</h2>
                     <span><a href="#">Home</a></span><br>
                     <span><a href="#">About</a></span><br>
                     <span><a href="#">Contact Us</a></span>
                 </div>
                 <div class="footer-contact">
-                    <h2 class="title">Contact Us</h1>
+                    <h2 class="title">Contact Us</h2>
                     <span>Robinsonchalasj@gmail.com</span><br>
                     <span>+1 (672) 667‑6121</span>
                 </div>
             </div>
             <nav class="footer-terms" aria-label="Second-nav">
-                <p class="copy">&copy 2024 <b>CJ consulting.</b> All rights reserved.</p>
+                <p class="copy">&copy;2024 <b>CJ consulting.</b> All rights reserved.</p>
                 <ul>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Privacy policy</a></li>
@@ -239,7 +242,7 @@
                 <details class="footer-section">
                     <summary class="footer-title">
                         <h2 class="title">Services</h2>
-                        <i class='bx bx-chevron-down'></i>
+                        <em class='bx bx-chevron-down'></em>
                     </summary>
                     <div class="footer-content">
                         <span><a href="#">Web Development</a></span><br>
@@ -265,8 +268,8 @@
                     <h2 class="title">Contact Us</h2>
                     <i class='bx bx-chevron-down'></i>
                 </summary>
-                    <span>Robinsonchalasj@gmail.com</span><br>
-                    <span>+1 (672) 667‑6121</span>
+                    <span><strong>Robinsonchalasj@gmail.com</strong></span><br>
+                    <span><em>+1 (672) 667‑6121</em></span>
                 </details>
             </div>
             <nav class="footer-terms" aria-label="Second-nav">

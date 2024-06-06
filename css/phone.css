@@ -1,0 +1,243 @@
+@media screen and (max-width: 575px) {
+ /*================START BANNER INFORMATION OR FIRST SECTION================*/
+ header {
+    padding: 15px 3%;
+    transition: .2s;
+    background: url(../assets/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+ #theme-moon {
+    display: none;
+}
+#theme-sun {
+    display: block;
+}
+#menu-icon {
+    display: inline;
+}
+.nav-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: url(../assets/img/hero-bg.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
+    z-index: 10001;
+}
+
+.nav-list a {
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+}
+.nav-list.open {
+    right: 0;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 120px;
+    right: 19%;
+    background: url(../assets/img/hero-bg.jpg);
+}
+
+.dropdown-menu a {
+    display: block;
+    color: var(--header-color);
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    padding-top: 115px;
+}
+
+.hero {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    
+}
+.section-content {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.founder-section {
+    display: grid;
+    grid-template-columns:  1fr;
+}
+
+.section-title {
+    font-size: 1.5rem;
+}
+
+.section-description{
+    text-align: justify;
+}
+
+.founder-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.progress-bar-container {
+    position: absolute;
+    left: -6.5rem;
+    top: 355rem;
+    transform: translateY(-50%);
+}
+
+.progress {
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    margin-bottom: 4.5rem;
+    margin-right: 0;
+}
+
+.progress-bar {
+    width: 5px;
+    height: 550px;
+}
+
+.progress-bar .indicator {
+    position: relative;
+    height: 23rem;
+    width: 81%;
+    background: var(--text-btn-color);
+    left: 7.7rem;
+    top: -30rem;
+}
+
+.card-strategic {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    width: 78%;
+    left: 5rem;
+    text-align: start;
+    font-size: 0.9rem;
+}
+
+/*==============================ABOUT PAGE===============================*/
+.about-page{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: justify;
+    gap: 3rem;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    background: rgba(255, 255, 255, .05);
+}
+
+.about-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.about-missions {
+    text-align: center;
+}
+
+.about-description{
+    text-align: justify;
+}
+
+.step-body {
+    text-align: center;
+}
+
+.misssions-a{
+    display: none;
+}
+
+/*==============================CONTACT SECTION===============================*/
+
+.form-fields {
+    grid-template-columns: 1fr;
+}
+
+.message {
+    grid-column: span 1;
+}
+
+/*==============================FOOTER OR SIX SECTION===============================*/
+
+.footer-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.footer-title {
+    width: 100%;
+}
+
+.title {
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: none;
+}
+
+.details-mobile {
+    display: block;
+}
+
+.footer-title {
+    display: flex;
+    cursor: pointer;
+    width: 110px;
+    padding: 5px;
+}
+
+.footer-terms,
+.footer-terms ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+}

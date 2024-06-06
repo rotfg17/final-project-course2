@@ -66,3 +66,8 @@ label {
 .text-primary {
     color: #6366f1 !important;
 }
+
+input::placeholder {
+    color: gray;
+}
+

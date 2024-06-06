@@ -141,7 +141,19 @@ header{
     z-index: 10001;
     cursor: pointer;
     padding-right: 1rem;
+    animation: bounce 1s infinite;
+    
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 
 #theme-sun {
     position: relative;
@@ -192,7 +204,7 @@ section {
 
 .hero-text h3, h2, h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 1;
     color: var(--text-color);
     margin: 0 0 15px;
@@ -201,15 +213,16 @@ section {
 .hero-text-gradient {
     background: var(--gradient-color);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0,0,0,0);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
-.hero-text-p {
+.hero-text-p::first-letter {
     display: block;
     color: var(--text-color);
     font-size: 1.125rem;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
+    
 }
   /* .hero-img{
     display: grid;
@@ -551,3 +564,4 @@ span > a,
  span{
     color: rgba(255, 255, 255, 0.7);
 }
+
